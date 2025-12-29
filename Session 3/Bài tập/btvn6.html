@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+<body>
+    <form>
+        <label for="name">Họ và tên</label>
+        <input type="text" name="name" id="name">
+        <br>
+        <label for="date">Ngày sinh</label>
+        <input type="datetime-local" id="date" name="date">
+        <br>
+        <label>Giới tính</label>
+        <input type="radio" name="gender" id="male">Nam
+        <input type="radio" name="gender" id="female">Nữ
+        <br>
+        <label for="prove">CCCD</label>
+        <input type="number" name="number" id="number">
+        <br>
+        <label for="date1">Ngày cấp</label>
+        <input type="datetime-local" id="date1" name="date1">
+        <br>
+        <label for="destination">Nơi cấp</label>
+        <input type="text" name="destination" id="desination">
+        <br>
+        <label for="home">Địa chỉ thường trú</label>
+        <textarea id="home" name="home" rows="5" cols="20"></textarea>
+        <br>
+            <label for="iden">Loại căn cước công dân</label>
+        <label><input type="radio" name="iden" id="iden">CCCD mới</label>
+         <label><input type="radio" name="iden" id="iden">CCCD cũ</label>
+        <br>
+         <label for="country">Quốc tịch:</label>
+        <input type="text" id="1" name="country" value="Việt Nam" readonly>
+        <br>
+        <label for="city">Thành phố</label>
+        <select id="city" name="city">
+            <option value="choose">Chọn thành phố</option>
+            <option value="hn">Hà Nội</option>
+            <option value="hcm">TP. Hồ Chí Minh</option>
+            <option value="dn">Đà Nẵng</option>
+        </select>
+    </form>
+</body>
+</html>

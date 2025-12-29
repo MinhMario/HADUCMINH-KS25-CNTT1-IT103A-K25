@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+  <body>
+     <form>
+            <label for="name">Họ và tên</label>
+            <input type="text" name="name" id="name">
+            <br>
+            <label for="date">Ngày sinh</label>
+            <input type="date" id="date" name="date">
+            <br>
+            <label>Giới tính:</label>
+            <label><input type="radio"  name="gender" value="male"> Nam</label>
+            <label><input type="radio"  name="gender" value="female"> Nữ</label>
+            <br>
+            <label for="phone">Số điện thoại:</label>
+            <input type="number" id="phone" name="phone">
+            <br>      
+             <label for="role">Vai trò trong công ty:</label>
+            <select id="role" name="role">
+                <option value="member">CEO</option>
+                <option value="leader">Chủ tịch</option>
+            </select>
+            <br>
+            <label for="type">Quy mô công ty:</label>
+            <select id="type" name="type">
+                <option value="small">Doanh nghiệp Nhỏ</option>
+                <option value="medium">Doanh nghiệp Trung bình</option>
+                <option value="large">Doanh nghiệp Lớn</option>
+            </select>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            <br>
+            <label for="reason">Lý do tham gia CLB:</label>
+            <textarea id="reason" name="reason" rows="4" cols="50"></textarea>
+            <br>
+            <label for="experience">Kinh nghiệm làm việc:</label>
+            <textarea id="experience" name="experience" rows="4" cols="50"></textarea>
+            <br>
+            <label for="aim">Mục tiêu khi tham gia CLB:</label>
+            <textarea id="aim" name="aim" rows="4" cols="50"></textarea>
+            <br>
+            <label>Chương trình muốn tham gia:</label>
+            <input type="checkbox" value="workshop"> Workshop
+            <input type="checkbox" value="seminar"> Networking
+            <input type="checkbox" value="networking"> Hội thảo
+            <br>
+            <input type="submit" value="Đăng ký hội viên">
+        </form>
+    </body>
+</html>
