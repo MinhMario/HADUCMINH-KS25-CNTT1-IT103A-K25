@@ -1,0 +1,24 @@
+.img{
+    border-radius: 5%;
+    /* Border Radius (thuộc tính border-radius)
+     là công cụ dùng để bo tròn các góc của một phần tử. */
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+.container{
+    text-align: center;
+    margin-top: 50px;
+    gap: 20px;
+    padding: 20px;
+    /* Padding (khoảng cách đệm) là một thuộc tính cực kỳ quan trọng dùng để 
+    tạo ra không gian giữa nội dung của một phần tử và viền (border) của nó. */
+}
+.lesson{
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: Arial, sans-serif;
+    background-color: lightblue;
+    display: flex;
+}

@@ -1,0 +1,11 @@
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    color: cyan;
+}
+#first{
+    font-family: Arial, sans-serif;
+}
+.highlight{
+    background-color:blanchedalmond;
+    border-left: 5px solid yellow;
+}
