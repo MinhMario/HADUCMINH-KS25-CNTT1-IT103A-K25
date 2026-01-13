@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            color:white;
+            place-items: center; 
+        }
+        button[data-type="primary"] {
+            background-color: blue;
+        }
+        button[data-type="secondary"] {
+            background-color: gray;
+        }
+        button[data-type="danger"] {
+            background-color: red;
+        }
+        .container {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button data-type="primary">Primary</button>
+        <button data-type="secondary">Secondary</button>
+        <button data-type="danger">Danger</button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <style>
+            li[data-sale="true"] .product:hover {
+            background-color: yellow;
+        }
+            li{
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            ul{
+                list-style: none;
+            }
+            .product{
+                margin-top: 20px;
+                padding:20px;
+                background-color: lightslategray;
+            }
+
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li data-sale="true"><div class="product">Sản phẩm A</div></li>
+            <li><div class="product">Sản phẩm B</div></li>
+            <li data-sale="true"><div class="product">Sản phẩm C</div></li>
+    </ul>
+    </body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <style>
+            body{
+                display: flex;
+                justify-content: center;
+            }
+            #profile{
+                background-color: cornsilk;
+                justify-items: center;
+                align-items: center;
+                border-radius: 10px;
+                display:inline-block;
+            }
+            img{
+                display: flex;
+                justify-items: center;
+                align-items: center;
+                padding:20px;
+            }
+            #profile:hover{
+                background-color: aquamarine;
+            }
+            #btn{
+                display: flex;
+                margin:0 auto;
+            }
+            #btn::after{
+                content:"→";
+                margin-left: 9px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="profile">
+            <img src="../Ảnh/images (3).jpg" alt="Ảnh">
+            <h2 id="name">Hà Đức Minh</h2>
+            <p id="bio">Là sinh viên Frontend cơ bản</p>
+            <button id="btn">Follow</button>
+        </div>
+    </body>
