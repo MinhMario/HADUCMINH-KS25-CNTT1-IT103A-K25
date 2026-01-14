@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+       <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <style>
+            body{
+                display: flex;
+                justify-content: center;
+            }
+            .container{
+                color:darkgreen;
+                display:inline-block;
+                width:350px ;
+                padding:20px;
+            }
+            label{
+                display: inline-block;
+                margin-top:  10px;
+                margin-bottom: 5px;
+            }
+            input[type="submit"]{
+                background-color:aquamarine ;
+                color: white;
+                text-align: center;
+                width: 350px;
+                border: none;
+                height: 30px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+        <h1>Biểu mẫu Feedback Phòng Khám Nha Khoa</h1>
+        <label for="name">Họ và tên</label><br>
+        <input type="text" name="name" id="name" placeholder="Nhập họ và tên"><br>
+        <label for="email">Email</label><br>
+        <input type="email" name="email" id="email" placeholder="example@gmail.com"><br>
+        <label for="pro">Dịch vụ đã sử dụng</label><br>
+        <select id="pro" name="pro"><br>
+            <option value="1">Khám răng tổng quát</option>
+            <option value="2">1</option>
+            <option value="3">2</option>
+        </select><br>
+        <label for="ques">Mức độ hài lòng</label><br>
+        <select id="ques" name="ques"><br>
+            <option value="1">Rất hài lòng</option>
+            <option value="2">Hài lòng</option>
+            <option value="3">Không hài lòng</option>
+        </select><br>
+        <label for="feedback">Nội dung phản hồi</label><br>
+        <textarea id="feedback" name="feedback" placeholder="Hãy cho chúng tôi cảm nhận của bạn"></textarea><br>
+        <input type="submit" value="Gửi feedback" id="btn"><br>
+        </div>
+    </body>
+</html>
