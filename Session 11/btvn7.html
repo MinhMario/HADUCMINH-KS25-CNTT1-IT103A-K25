@@ -1,0 +1,188 @@
+    <!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width,initial-scale=1.0">
+            <style>
+                * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body{
+                background-color: #f0f0f0;
+                display: flex;
+                flex-direction: column;
+                font-family: Arial, sans-serif;
+                width:100% ;
+            }
+            .total{
+                display: flex;
+                width:100%;
+            }
+            .title{
+                margin:20px;
+                display: flex;
+                gap:700px;
+            }
+            .card {
+                margin-top: 50px;
+                margin-left:20px ;
+            border-radius: 15px;
+            overflow: hidden;  
+            width:350px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            }
+            .card img{
+                width: 100%;
+                display: block;
+            }
+            .content {
+            display: flex;
+            background-color: #d4b896;
+            padding: 25px;
+            color: white;
+            opacity:0.5 ;
+        }
+        .news{
+            width:375px;
+            padding: 5px;
+            margin-top:50px;
+            margin-left: 5px;
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #ffffff;
+            border-radius: 10px;
+        }
+        .new{
+            display: flex;
+        }
+        .new img{
+            height:100px;
+            width:50%;
+            margin:5px ;
+        }
+        .news input[type="submit"]{
+            background-color:lightgray;
+            color: #f0f0f0;
+            border-color:transparent;
+            padding:10px;
+        }
+        .club{
+            margin-top:50px;
+            margin-left: 10px;
+            width:600px;
+            padding:10px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            height:auto;
+        }
+        .club-col{
+            text-align: left;
+        }
+         .center{
+            text-align:center;
+            width:60px;
+         }
+         .club img{
+      width:26px;
+      height:26px;
+      border-radius:50%;
+      object-fit:cover;
+      background:#fff;
+    }
+     .num{
+      width:40px;
+      text-align:center;
+      color:#222;
+      font-weight:700;
+    }
+    .team{
+        display: flex;
+        gap:2px;
+    }
+            </style>
+        </head>
+        <body>
+            <div class="title">
+            <h2>Recent News</h2>
+            <h2>Clubs Ranking</h2>
+            </div>
+            <div class="total">
+            <div class="card">
+                <div class="image">
+                    <img src="https://images.unsplash.com/photo-1555597673-b21d5c935865?w=800">
+                </div>
+                <div class="content">
+                    <p>Day 5 Highlights</p>
+                    <h2>Baku 2023 World Taekwondo Championships</h2>
+                    
+                </div>
+            </div>
+            <div class="news">
+                        <div class="new">
+                            <img src="../Session 11/images (2).jpg">
+                            <div class="word">
+                                <p>#Pollar.87-July 23 2025</p>
+                                <h3>Baku 2023 Deagestan</h3>
+                            </div>
+                        </div>
+                        <div class="new">
+                            <img src="../Session 11/images (2).jpg">
+                            <div class="word">
+                                <p>#Pollar.87-July 23 2025</p>
+                                <h3>Baku 2023 Deagestan</h3>
+                            </div>
+                        </div>
+                        <div class="new">
+                            <img src="../Session 11/images (2).jpg">
+                            <div class="word">
+                                <p>#Pollar.87-July 23 2025</p>
+                                <h3>Baku 2023 Deagestan</h3>
+                            </div>
+                        </div>
+                        <input type="submit" value="More">
+                    </div>
+                        <div class="club">
+                            <table>
+                                <thead>
+                                    <tr>
+                                       <th class="club-col" colspan="2">Club</th>
+                                         <th class="center">GP</th>
+                                             <th class="center">W</th>
+                                            <th class="center">D</th>
+                                             <th class="center">L</th>
+                                             <th class="center">F</th>
+                                            <th class="center">A</th>
+                                             <th class="center">GD</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+        <tr>
+          <td class="num">1</td>
+          <td class="team">
+              <img src="https://upload.wikimedia.org/wikipedia/en/e/eb/Manchester_City_FC_badge.svg" alt="Man City">
+              Manchester City
+          </td>
+          <td class="center">38</td><td class="center">29</td><td class="center">6</td><td class="center">3</td>
+          <td class="center">99</td><td class="center">26</td><td class="center">73</td>
+        </tr>
+        <tr>
+          <td class="num">2</td>
+            <td class="team">
+              <img src="https://upload.wikimedia.org/wikipedia/en/0/0c/Liverpool_FC.svg" alt="Liverpool">
+              Liverpool
+            </td>
+          </td>
+          <td class="center">38</td><td class="center">28</td><td class="center">8</td><td class="center">2</td>
+          <td class="center">94</td><td class="center">26</td><td class="center">68</td>
+        </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+        </body>
+    </html>
+            
