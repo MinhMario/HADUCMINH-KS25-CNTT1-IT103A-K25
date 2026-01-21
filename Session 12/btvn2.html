@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        :root {
+            --card-width: 500px;
+            --card-height: 550px;
+            --card-padding: 10px;
+            --color-primary: blue;
+            --color-bg-genre: azure;
+            --color-shadow: rgba(0,0,0,0.2);
+        }
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f3f3f3;
+        }
+        .card {
+            width: var(--card-width);
+            height: var(--card-height);
+            box-shadow: 0 4px 8px var(--color-shadow);
+            border-radius: 12px;
+            position: relative;
+            overflow: hidden;
+            background: #fff;
+            margin: 40px auto;
+            display: flex;
+            flex-direction: column;
+            /* Desktop effect: subtle border and slightly larger shadow */
+            border: 1.5px solid #e1e8ef;
+            transition: transform 0.3s cubic-bezier(.4,2,.6,1), box-shadow 0.2s;
+        }
+        .card:hover {
+            /* Desktop hover: Elevate and scale */
+            transform: scale(1.028) translateY(-6px);
+            box-shadow: 0 12px 24px rgba(0,40,140,0.15);
+        }
+        .card img {
+            width: 100%;
+            height: 210px;
+            object-fit: cover;
+            display: block;
+            /* Desktop: rounded corners top only */
+            border-top-left-radius: 12px;
+            border-top-right-radius: 12px;
+        }
+        .watch {
+            position: absolute;
+            top: 16px;
+            right: 16px;
+            background: rgba(0,0,0,0.6);
+            color: #fff;
+            padding: 4px 16px;
+            border-radius: 999px;
+            font-size: 1em;
+            letter-spacing: .04em;
+            z-index: 2;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.13);
+        }
+        .rate {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: var(--card-padding);
+            padding-bottom: 4px;
+            /* Desktop: add subtle bottom border */
+            border-bottom: 1px solid #f0f0f0;
+        }
+        .genre {
+            background-color: var(--color-bg-genre);
+            color: var(--color-primary);
+            border-radius: 6px;
+            padding: 2px 12px;
+            font-size: 1.08em;
+            font-weight: 650;
+            display: inline-block;
+            letter-spacing: .01em;
+        }
+        .content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            padding: 0 var(--card-padding);
+        }
+        .content h2 {
+            margin: 16px 0 8px 0;
+            font-size: 1.42em;
+            color: #1a237e;
+            text-shadow: 0 2px 6px rgba(60,60,160,0.06);
+            font-weight: bold;
+            letter-spacing: .03em;
+        }
+        .content p {
+            margin: 0 0 12px 0;
+            color: #495076;
+            font-size: 1.08em;
+            line-height: 1.6;
+        }
+        .people {
+            display: flex;
+            justify-content: space-between;
+            font-size: 1em;
+            margin-bottom: 10px;
+            color: #475170;
+            font-weight: 500;
+        }
+        hr {
+            border: none;
+            border-top: 1px solid #e5e7ef;
+            margin: 10px 0;
+        }
+        .price {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 var(--card-padding) 0 var(--card-padding);
+            margin-top: 6px;
+        }
+        .price h2 {
+            margin: 0;
+            font-size: 1.55em;
+            color: #e53935;
+            font-weight: 700;
+            letter-spacing: .01em;
+            text-shadow: 0 1px 4px rgba(218,37,37,0.08);
+        }
+        .btn-detail {
+            background: linear-gradient(90deg, #1852f7 46%, #4f88fc 100%);
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            padding: 10px 24px;
+            font-size: 1.06em;
+            cursor: pointer;
+            transition: background 0.18s, box-shadow 0.13s;
+            margin-top: 20px;
+            font-weight: 600;
+            box-shadow: 0 2px 8px rgba(25,80,240,0.09);
+        }
+        .btn-detail:hover, .btn-detail:focus {
+            background: linear-gradient(90deg, #092ead 0%, #497aff 90%);
+            box-shadow: 0 4px 18px rgba(25,64,190,0.13);
+            outline: none;
+        }
+        /* Desktop-specific: max-width, slightly increased font, wider card above 1024px */
+        @media (min-width: 1025px) {
+            .card {
+                width: 600px;
+                min-height: 600px;
+            }
+            .content h2 {
+                font-size: 1.7em;
+            }
+            .price h2 {
+                font-size: 1.7em;
+            }
+            .btn-detail {
+                font-size: 1.15em;
+                padding: 12px 30px;
+            }
+            .genre {
+                font-size: 1.15em;
+            }
+            .people {
+                font-size: 1.07em;
+            }
+        }
+        @media (max-width: 800px) {
+            .card {
+                width: 90vw;
+            }
+        }
+        @media (max-width: 540px) {
+            .card {
+                width: 95vw;
+                height: auto;
+                border: none;
+            }
+            .card img {
+                height: 150px;
+            }
+            .content h2 {
+                font-size: 1.15em;
+            }
+            .btn-detail {
+                font-size: 1em;
+                padding: 8px 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <img src="../Session 12/code-icon-design-vector-png_125856.jpg" alt="Lập trình Web Full Stack">
+        <div class="watch">Bán chạy</div>
+        <div class="rate">
+            <span class="genre">Lập trình</span>
+            <span>4.9</span>
+        </div>
+        <div class="content">
+            <h2>Lập trình Web Full Stack</h2>
+            <p>Lập trình web từ cơ bản đến nâng cao với các công nghệ hiện đại nhất</p>
+            <div class="people">
+                <span>40 giờ</span>
+                <span>12K+ Học viên</span>
+            </div>
+            <hr>
+            <div class="price">
+                <h2>2.990.000đ</h2>
+                <button class="btn-detail">Xem chi tiết</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+            <style>
+                body{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+            .title{
+                margin-top: 20px;
+                color: blue;
+                background-color:azure;
+                padding:10px;
+                text-align:center;
+                width: fit-content;
+            }
+            .content{
+                margin-top: 30px;
+                display: flex;
+                gap:10px;
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+            .content-card{
+                box-shadow: 0 4px 18px rgba(25,64,190,0.13);
+                padding:30px;
+                text-align: center;
+                border-radius: 10px;
+                border:2px solid transparent;
+                transition: 0.2s;
+                width:300px;
+                height: 400px;
+            }
+            .content-card:hover{
+                border-color:blue ;
+                transform: scale(1.15);
+            }
+            
+            .card-detail{
+                text-align: left;
+            }
+            .price{
+                display: flex;
+                justify-content: center;
+            }
+            .price p{
+                margin-top: 40px;
+            }
+            input[type="submit"]{
+                color: blue;
+                border-radius:8px;
+                border: 1px solid blue;
+                padding:10px;
+                width:80px;
+                margin-top: 20px;
+                width:80%;
+                transition: all 0.3s ease;
+                background-color: white;
+            }
+            .content-card:hover input[type="submit"]{
+                background-color:blue;
+                color: white;
+            }
+            .card-detail img{
+                margin-right: 5px ;
+            }
+            @media (min-width:1200px){
+                .content{
+                    width: 100%;
+                    height:auto;
+                }
+            }
+            @media (max-width:1024px){
+                .content{
+                    width:100% ;
+                    height: auto;
+                }
+            }
+            @media(max-width:768px){
+                .content{
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="title">
+            <p>Bảng giá</p>
+        </div>
+        <h1>Chọn gói phù hợp  với bạn</h1>
+        <p>Linh hoạt và phù hợp với nhu cầu học tập</p>
+        <div class="content">
+            <div class="content-card">
+                <h3>Cơ bản</h3>
+                <div class="price">
+                <h1>499.000đ</h1><p>/tháng</p>
+                </div>
+                <hr>
+                <div class="card-detail">
+                   <p> <img src="../Session 12/Container.png">Truy cập 50+ khoá học</p>
+                    <p> <img src="../Session 12/Container.png">Học trên mọi thiết bị</p>
+                     <p> <img src="../Session 12/Container.png">Hỗ trợ cộng đồng</p>
+                     <p><img src="../Session 12/Container1.png">Chứng chỉ</p>
+                     <p><img src="../Session 12/Container1.png">Hỗ trợ 1-1</p>
+                </div>
+                <input type="submit" value="Chọn gói">
+            </div>
+             <div class="content-card">
+                <h3>Cơ bản</h3>
+                <div class="price">
+                <h1>499.000đ</h1><p>/tháng</p>
+                </div>
+                <hr>
+                <div class="card-detail">
+                   <p> <img src="../Session 12/Container.png">Truy cập 50+ khoá học</p>
+                    <p> <img src="../Session 12/Container.png">Học trên mọi thiết bị</p>
+                     <p> <img src="../Session 12/Container.png">Hỗ trợ cộng đồng</p>
+                     <p><img src="../Session 12/Container1.png">Chứng chỉ</p>
+                     <p><img src="../Session 12/Container1.png">Hỗ trợ 1-1</p>
+                </div>
+                <input type="submit" value="Chọn gói">
+            </div>
+             <div class="content-card">
+                <h3>Cơ bản</h3>
+                <div class="price">
+                <h1>499.000đ</h1><p>/tháng</p>
+                </div>
+                <hr>
+                <div class="card-detail">
+                   <p> <img src="../Session 12/Container.png">Truy cập 50+ khoá học</p>
+                    <p> <img src="../Session 12/Container.png">Học trên mọi thiết bị</p>
+                     <p> <img src="../Session 12/Container.png">Hỗ trợ cộng đồng</p>
+                     <p><img src="../Session 12/Container1.png">Chứng chỉ</p>
+                     <p><img src="../Session 12/Container1.png">Hỗ trợ 1-1</p>
+                </div>
+                <input type="submit" value="Chọn gói">
+            </div>
+        </div>
+        
+    </body>
+</html>

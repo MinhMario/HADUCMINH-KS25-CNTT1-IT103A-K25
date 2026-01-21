@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,intial-scale=1.0">
+        <style>
+            *{
+                margin: 0;
+                padding:0;
+                box-sizing: border-box;
+            }
+            .nav{
+                display: flex;
+                justify-content:space-around;
+                padding:20px;
+            }
+            .link{
+                display: flex;
+                gap:20px;
+            }
+            @media(max-width:768px){
+                .nav{
+                    width:100% ;
+                    background-color: aliceblue;
+                }
+            }
+            @media(min-width:768px){
+                .nav{
+                    width:100%;
+                    background-color:chocolate;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="nav">
+                <p>Edu Learn</p>
+                <span class="link">
+                <p>Trang chủ</p>
+                <p>Tính năng</p>
+                <p>Khoá học</p>
+                <p>Đánh giá</p>
+                <input type="submit" value="Đặt ngay">
+                </span>
+        </div>
+    </body>
+</html>

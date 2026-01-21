@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+*{
+    padding: 0;margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(128, 128, 128, 0.075);
+}
+.intro{
+    background: linear-gradient(90deg, #0d6efd, #0b5ed7);
+    display: flex;
+    justify-content: space-around;
+    height: 64px;
+    width: 100%;
+    color: whitesmoke;
+    align-items: center;
+}
+.menu{
+    display: none;
+}
+.intro a{
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 12px;
+}
+.find{
+    width: 400px;
+}
+.intro input{
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    outline: none;
+    height: 25px;
+    width: 100%;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 8px;
+}
+.intro input:hover{
+    transform: translateY(-4px);
+}
+@media screen and (max-width:768px) {
+    .intro input{
+        display: none;
+    }
+    .menu{
+        display: block;
+        font-size: 29px;
+    }
+    nav{
+        display: none;
+    }
+    .intro{
+        padding: 20px;
+        justify-content: space-between;
+    }
+}
+.first{
+    display: flex;
+    margin: 36px;
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 12px;
+    height: 96px;
+    justify-content: space-between;
+    align-items: center;
+}
+.contain{
+    border: 1px solid rgba(128, 128, 128, 0.075);
+    height: 10px;
+    width: 176px;
+    margin-right: 12px;
+    border-radius: 12px;
+    background-color: rgba(128, 128, 128, 0.075);
+}
+.prog{
+    border: 1px solid #0d6efd;
+    height: 10px;
+    width: 68%;
+    border-radius: 12px;
+    background-color: #0d6efd;
+}
+.greeting{
+    margin-left: 25px;
+}
+.learning{
+    display: flex;
+    justify-content: space-evenly;
+}
+.studying{
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: white;
+    width: 425px;
+    height: 325px;
+}
+.studying img{
+    width: 100%;
+    height: 160px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.studying .cmt{
+    padding: 20px;
+}
+.studying a{
+    background-color: #0d6efd;
+    color: white;
+    border: 1px solid #0d6efd;
+    text-decoration: none;
+    border-radius: 8px;
+    padding: 12px 145px;
+    position: relative;
+    left: 23px;
+    top: 25px;
+}
+.second{
+    font-weight: 700;
+    color: #0b5ed7;
+    font-size: 36px;
+    padding: 36px;
+}
+.studying:hover{
+    transform: translateY(-12px);
+    transition: all 0.25s linear;
+}
+@media screen and (max-width: 1200px) {
+    .intro{
+        flex-wrap: wrap;
+    }
+    .first{
+        flex-wrap: wrap;
+    }
+    .learning{
+        flex-wrap: wrap;
+    }
+}
+@media screen and (max-width: 768px) {
+    .intro{
+        flex-wrap: wrap;
+    }
+    .first{
+        flex-wrap: wrap;
+    }
+    .learning{
+        flex-wrap: wrap;
+    }
+}
+@media screen and (max-width: 600px) {
+    .intro{
+        flex-wrap: wrap;
+    }
+    .first{
+        flex-wrap: wrap;
+    }
+    .learning{
+        flex-wrap: wrap;
+    }
+}
+
+    </style>
+</head>
+<body>
+        <header>
+            <div class="intro">
+                <h1>Elearning</h1>
+                <div class="find">
+                    <input type="search" placeholder="Tìm khóa học">
+                </div>
+                <nav>
+                    <a href="#suggest">Khóa học</a>
+                    <a href="#current">Tiến độ</a>
+                    <a href="">Hồ sơ</a>
+                </nav>
+                <div class="menu">☰</div>
+            </div>
+        </header>
+        <main>
+            <div class="first">
+                <div class="greeting">
+                    <h2>Xin chào, Bạn tôi!</h2>
+                    <p>Chúc bạn học tập hiệu quả hôm nay</p>
+                </div>
+                <div class="progress">
+                    <p>Tiến độ tổng: 68%</p>
+                    <div class="contain">
+                        <div class="prog"></div>
+                    </div>
+                </div>
+            </div>
+            <h3 class="second" id="current">Khóa học đang học</h3>
+            <div class="current">
+                <div class="learning">
+                    <div class="studying">
+                        <img src="https://picsum.photos/400/250?random=1" alt="pic1">
+                        <div class="cmt">
+                            <h3>CSS Flexbox & Grid</h3>
+                            <p>Hoàn thành: 85%</p>
+                        </div>
+                        <a href="">Tiếp tục học</a>
+                    </div>
+                    <div class="studying">
+                        <img src="https://picsum.photos/400/250?random=2" alt="pic2">
+                        <div class="cmt">
+                            <h3>JavaScript Cơ bản</h3>
+                            <p>Hoàn thành: 42%</p>
+                        </div>
+                        <a href="">Tiếp tục học</a>
+                    </div>
+                    <div class="studying">
+                        <img src="https://picsum.photos/400/250?random=3" alt="pic3">
+                        <div class="cmt">
+                            <h3>Responsive Web Design</h3>
+                            <p>Hoàn thành: 95%</p>
+                        </div>
+                        <a href="">Tiếp tục học</a>
+                    </div>
+                </div>
+            </div>
+            <h3 class="second" id="suggest">Khóa học gợi ý</h3>
+            <div class="learning">
+                    <div class="studying">
+                        <img src="https://picsum.photos/400/250?random=4" alt="pic4">
+                        <div class="cmt">
+                            <h3>React cho người mới</h3>
+                            <p>Bắt đầu ngay hôm nay</p>
+                        </div>
+                        <a href="">Xem chi tiết</a>
+                    </div>
+                    <div class="studying">
+                        <img src="https://picsum.photos/400/250?random=5" alt="pic5">
+                        <div class="cmt">
+                            <h3>Python Cơ bản</h3>
+                            <p>Phù hợp beginner</p>
+                        </div>
+                        <a href="">Xem chi tiết</a>
+                    </div>
+                </div>
+        </main>
+</body>
+</html>
+        
