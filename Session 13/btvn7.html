@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <style>
+            body{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+            }
+            .student{
+                display: flex;
+                justify-content: space-evenly;
+                gap:10px;
+            }
+            .content{
+                background-color:lavender;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding:10px;
+            }
+            .content h3{
+                color:cornflowerblue;
+            }
+            @media (max-width:768px){
+               .student{
+                flex-wrap: wrap;
+               }
+            }
+            @media (max-width:600px){
+                .student{
+                    flex-wrap: wrap;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Thống kê học tập</h1>
+            <section class="student">
+                <div class="content">
+                    <p>Icon</p>
+                    <h3>4</h3>
+                    <p>Tổng khoá học</p>
+                </div><div class="content">
+                    <p>Icon</p>
+                    <h3>4</h3>
+                    <p>Tổng khoá học</p>
+                </div><div class="content">
+                    <p>Icon</p>
+                    <h3>4</h3>
+                    <p>Tổng khoá học</p>
+                </div><div class="content">
+                    <p>Icon</p>
+                    <h3>4</h3>
+                    <p>Tổng khoá học</p>
+                </div>
+            </section>
+            </header>
+    </body>
+</html>
